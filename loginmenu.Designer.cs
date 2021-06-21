@@ -65,7 +65,8 @@ namespace ProjektKawiarka
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(487, 276);
+            this.BackColor = System.Drawing.Color.PeachPuff;
+            this.ClientSize = new System.Drawing.Size(459, 276);
             this.Controls.Add(this.btnPassword);
             this.Controls.Add(this.txbPassword);
             this.Controls.Add(this.lbpassword);

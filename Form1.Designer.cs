@@ -42,6 +42,8 @@ namespace ProjektKawiarka
             this.btCoffeeBig = new System.Windows.Forms.Button();
             this.lbGiveCoffee = new System.Windows.Forms.Label();
             this.txbMoney = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lbAddMoney
@@ -125,6 +127,7 @@ namespace ProjektKawiarka
             this.btCoffeeSmall.TabIndex = 9;
             this.btCoffeeSmall.Text = "Zamów";
             this.btCoffeeSmall.UseVisualStyleBackColor = true;
+            this.btCoffeeSmall.Click += new System.EventHandler(this.btCoffeeSmall_Click);
             // 
             // btCoffeAverage
             // 
@@ -134,6 +137,7 @@ namespace ProjektKawiarka
             this.btCoffeAverage.TabIndex = 10;
             this.btCoffeAverage.Text = "Zamów";
             this.btCoffeAverage.UseVisualStyleBackColor = true;
+            this.btCoffeAverage.Click += new System.EventHandler(this.btCoffeAverage_Click);
             // 
             // btCoffeeBig
             // 
@@ -143,11 +147,12 @@ namespace ProjektKawiarka
             this.btCoffeeBig.TabIndex = 11;
             this.btCoffeeBig.Text = "Zamów";
             this.btCoffeeBig.UseVisualStyleBackColor = true;
+            this.btCoffeeBig.Click += new System.EventHandler(this.btCoffeeBig_Click);
             // 
             // lbGiveCoffee
             // 
             this.lbGiveCoffee.AutoSize = true;
-            this.lbGiveCoffee.Location = new System.Drawing.Point(419, 350);
+            this.lbGiveCoffee.Location = new System.Drawing.Point(436, 376);
             this.lbGiveCoffee.Name = "lbGiveCoffee";
             this.lbGiveCoffee.Size = new System.Drawing.Size(122, 20);
             this.lbGiveCoffee.TabIndex = 12;
@@ -161,11 +166,23 @@ namespace ProjektKawiarka
             this.txbMoney.TabIndex = 13;
             this.txbMoney.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbMoney_KeyPress);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.ImageLocation = "C:\\Users\\pawel\\source\\repos\\ProjektKawiarka\\Resources\\coffeicon.png";
+            this.pictureBox1.Location = new System.Drawing.Point(328, 178);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(342, 190);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 14;
+            this.pictureBox1.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Wheat;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txbMoney);
             this.Controls.Add(this.lbGiveCoffee);
             this.Controls.Add(this.btCoffeeBig);
@@ -181,6 +198,7 @@ namespace ProjektKawiarka
             this.Controls.Add(this.lbAddMoney);
             this.Name = "Form1";
             this.Text = "Automat do Kawy";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -200,6 +218,7 @@ namespace ProjektKawiarka
         private System.Windows.Forms.Button btCoffeeBig;
         private System.Windows.Forms.Label lbGiveCoffee;
         private System.Windows.Forms.TextBox txbMoney;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
